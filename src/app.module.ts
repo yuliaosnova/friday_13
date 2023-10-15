@@ -23,6 +23,7 @@ import { UserModule } from './user/user.module';
         database: configService.get('DB_NAME'),
         synchronize: true,
         entities: [__dirname + '/**/*.entity{.js, .ts}'],
+        ssl: true,
       }),
       inject: [ConfigService],
     }),
